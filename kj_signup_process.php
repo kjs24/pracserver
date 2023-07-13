@@ -8,7 +8,7 @@ $password = hash("sha256", $_POST['password']);
 $conn = mysqli_connect($_SERVER['DB_HOST'],'root','111111','chat');
 $sql="
   INSERT INTO users (id,name,password)
-    VALUES('{$_POST['id']}','{$_POST['name']}','{$_POST['password']}')
+    VALUES('{$_POST['id']}','{$_POST['name']}','{$password}')
 ";
 mysqli_query($conn,$sql);
 
