@@ -1,7 +1,7 @@
 <?php
 
 $id = $_POST['id'];
-$password = $_POST['password'];
+$password = hash("sha256", $_POST['password']);
 //$conn = mysqli_connect('127.0.0.1','root','111111','chat'); 원래
 $conn = mysqli_connect($_SERVER['DB_HOST'],'root','111111','chat');
 $sql = "SELECT * FROM users";
@@ -12,7 +12,7 @@ $name = "SELECT name FROM users where ";
 while ($row = mysqli_fetch_array($result)) {
 
 	
-	//echo "<script>alert('{$row["id"]},{$row["password"]}');</script>";
+	echo "<script>alert('{$row["id"]},{$row["password"]}');</script>";
 
   if ($id == $row['id'] && $password == $row['password']) {
 
