@@ -9,13 +9,13 @@ ini_set('display_errors','0');
 
 <body>
 <?php
-$id=$_POST['id'];
-$name=$_POST['name'];
+$id= $_POST['id'];
+$name= $_POST['name'];
 
 echo $name;
 
  ?>
- <a href="login2.php?ch=">돌아가기</a>
+ <a href="kj_login.php?ch=">돌아가기</a>
   <div>
     <form method="POST" id="input">
       <input type="text" , name="chats" , placeholder="내용">
