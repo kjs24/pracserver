@@ -12,7 +12,7 @@ $name = "SELECT name FROM users where ";
 while ($row = mysqli_fetch_array($result)) {
 
 	
-	echo "<script>alert('{$row}');</script>";
+	echo "<script>alert('{$row["id"]},{$row["password"]}');</script>";
 
   if ($id == $row['id'] && $password == $row['password']) {
 
