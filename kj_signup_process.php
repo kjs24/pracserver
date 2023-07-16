@@ -4,9 +4,9 @@ ini_set("display_errors", 1);
 $id = $_POST['id'];
 $name = $_POST['name'];
 if($_POST['salt']=="no"){ //솔트 미적용
-   $password = hash("sha256", $_POST['password']);
+   $password = sha1($_POST['password']);
 }else{  //솔트 적용
-
+  $password = sha1($_POST['password']);
 }
 
 //$conn = mysqli_connect('127.0.0.1','root','111111','chat');

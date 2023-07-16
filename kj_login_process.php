@@ -1,7 +1,8 @@
 <?php
 
 $id = $_POST['id'];
-$password = hash("sha256", $_POST['password']);
+$password = sha1($_POST['password']);
+
 //$conn = mysqli_connect('127.0.0.1','root','111111','chat'); 원래
 $conn = mysqli_connect($_SERVER['DB_HOST'],'root','111111','chat');
 $sql = "SELECT * FROM users";
