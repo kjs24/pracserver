@@ -22,10 +22,10 @@
       }
     }
     ?>
-    <input type='submit' value='로그인'>
+    <input type='submit' value='login'>
   </form>
 
-  <h6><a href="kj_signup.php">회원가입</a></h6>
+  <h6><a href="kj_signup.php">sign up</a></h6>
 </body>
 
 </html>

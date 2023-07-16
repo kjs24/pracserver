@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>브루트 포스 성공</h1>
+    <h1>Complete brute force</h1>
     <?php 
 
     echo "id: ",$_POST['id'];
